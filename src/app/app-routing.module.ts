@@ -14,6 +14,10 @@ import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   {
+    path: '',
+    component: HomeComponent
+  },
+  {
     path: 'home',
     component: HomeComponent
   },

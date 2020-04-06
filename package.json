@@ -1,13 +1,16 @@
 {
-  "name": "charts",
-  "version": "0.0.0",
+  "name": "shashigaddam.github.io",
+  "homepage":"https://shashigaddam.github.io",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "predeploy": "npm run build --prod",
+    "deploy": "gh-pages -b master -d dist"
   },
   "private": true,
   "dependencies": {
