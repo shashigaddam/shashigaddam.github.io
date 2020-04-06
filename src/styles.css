@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.globalTop{
+  margin-top:73px;
+}
+/* You can add global styles to this file, and also import other style files */
+.tick text {
+  font-size: 12px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #4C5554;
+  stroke-width: 1;
+}
+
+.x.axis .tick line {
+  display: none
+}
+
+.domain {
+  display: block !important;
+  stroke: #4C5554 !important;
+  stroke-width: 2 !important;
+}
+.legend {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+.legend rect {
+  stroke-width: 2;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 80px;
+  height: 35px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: black;
+  border: 0px;
+  border-radius: 4px;
+  pointer-events: none;
+  color:#ffffff;
+}
+
+.setColor{
+  color:#ff675f;
+}
+
+.homePage{
+  background-color: #e1e1e1
+}
+
+
