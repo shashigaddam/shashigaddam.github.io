@@ -59,6 +59,10 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 var routes = [
     {
+        path: '',
+        component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
+    },
+    {
         path: 'home',
         component: _components_home_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
     },
