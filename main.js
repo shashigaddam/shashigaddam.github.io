@@ -363,8 +363,8 @@ var BarchartComponent = /** @class */ (function () {
             {
                 id: 5,
                 label: 'Vue Js',
-                value: 0.8,
-                type: ' 8 Months'
+                value: 0.9,
+                type: ' 9 Months'
             },
             {
                 id: 6,
@@ -477,7 +477,7 @@ module.exports = ".contact{\n  position: relative;\n  left: 40px;\n}\n\n/*# sour
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n\n    <div class=\"col-lg-12\">\n      <h1 class=\"page-header globalTop setColor\">Contact Details</h1>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-8\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24917.73824515794!2d-90.39844966093447!3d38.67836504470192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df336140168653%3A0x3c64a264e82829eb!2sSt.%20Louis%2C%20MO%2063132!5e0!3m2!1sen!2sus!4v1586226390838!5m2!1sen!2sus\" width=\"700\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>\n    </div>\n\n    <div class=\"col-md-4\">\n      <h3 class=\"contact\">Get in Touch</h3>\n        <h4 class=\"contact\"> Email: shashi.uidev88@gmail.com</h4>\n        <h4 class=\"contact\">Contact No:314-384-2427</h4>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-lg-12\">\n      <h1 class=\"page-header globalTop setColor\">Contact Details</h1>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-8\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24917.73824515794!2d-90.39844966093447!3d38.67836504470192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df336140168653%3A0x3c64a264e82829eb!2sSt.%20Louis%2C%20MO%2063132!5e0!3m2!1sen!2sus!4v1586226390838!5m2!1sen!2sus\" width=\"700\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>\n    </div>\n    <div class=\"col-md-4\">\n      <h3 class=\"contact\">Get in Touch</h3>\n        <h4 class=\"contact\"> Email: shashi.uidev88@gmail.com</h4>\n        <h4 class=\"contact\">Contact No:314-384-2427</h4>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
