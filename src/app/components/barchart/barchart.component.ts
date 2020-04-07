@@ -28,57 +28,57 @@ export class BarchartComponent implements OnInit {
       id: 0,
       label: 'Html',
       value: 6,
-      type:'Years'
+      type:'6 Years'
     },
     {
       id: 1,
       label: 'Css',
       value: 6,
-      type:'Months'
+      type:'6 Years'
     },
     {
       id: 2,
       label: 'Javascript',
       value: 6,
-      type:'Years'
+      type:'6 Years'
     },
 
     {
       id: 3,
       label: 'Jquery',
       value: 4,
-      type:'Years'
+      type:'4 Years'
     },
     {
       id: 4,
       label: 'Angular js',
       value: 4,
-      type:'Years'
+      type:'4 Years'
     },
     {
       id: 5,
       label: 'Vue Js',
-      value: 7,
-      type:'Months'
+      value: 0.8,
+      type:' 8 Months'
     },
     {
       id: 6,
       label: 'React Js',
-      value: 6,
-      type:'Months'
+      value: 0.6,
+      type:'6 Months'
 
     },
     {
       id: 7,
       label: 'Node js',
       value: 3,
-      type:'Months'
+      type:' 3 Years'
     },
     {
       id: 8,
       label: 'D3 js',
       value: 3,
-      type:'Months'
+      type:'3 Years'
     },
    
   ];
@@ -145,7 +145,8 @@ export class BarchartComponent implements OnInit {
         return color;
       }).on("mouseover", function (d) {
         divTooltip.style("opacity", 0.9);
-        divTooltip.html(d.label + "<br/>"  + d.value + " " + d.type )
+        // divTooltip.html(d.label + "<br/>"  + d.value + " " + d.type )
+        divTooltip.html(d.label + "<br/>"  + " " + d.type )
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
       }).on("mouseout", function () {

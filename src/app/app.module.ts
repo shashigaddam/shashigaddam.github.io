@@ -18,6 +18,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { EducationComponent } from './components/education/education.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 
@@ -44,7 +45,8 @@ import { ContactComponent } from './components/contact/contact.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule.forRoot()
   ],
   providers: [PortfolioService],
   bootstrap: [AppComponent]
