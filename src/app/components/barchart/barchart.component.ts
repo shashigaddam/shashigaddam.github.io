@@ -58,8 +58,8 @@ export class BarchartComponent implements OnInit {
     {
       id: 5,
       label: 'Vue Js',
-      value: 0.8,
-      type:' 8 Months'
+      value: 0.9,
+      type:' 9 Months'
     },
     {
       id: 6,
