@@ -202,6 +202,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_experience_experience_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./components/experience/experience.component */ "./src/app/components/experience/experience.component.ts");
 /* harmony import */ var _components_education_education_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./components/education/education.component */ "./src/app/components/education/education.component.ts");
 /* harmony import */ var _components_contact_contact_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./components/contact/contact.component */ "./src/app/components/contact/contact.component.ts");
+/* harmony import */ var ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ngx-bootstrap/carousel */ "./node_modules/ngx-bootstrap/carousel/fesm5/ngx-bootstrap-carousel.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -215,6 +216,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 // import {  PieChartComponent, BarChartComponent } from 'angular-d3-charts';
+
 
 
 
@@ -254,7 +256,8 @@ var AppModule = /** @class */ (function () {
                 _angular_forms__WEBPACK_IMPORTED_MODULE_5__["ReactiveFormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_3__["BrowserAnimationsModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"]
+                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+                ngx_bootstrap_carousel__WEBPACK_IMPORTED_MODULE_18__["CarouselModule"].forRoot()
             ],
             providers: [_portfolio_service__WEBPACK_IMPORTED_MODULE_8__["PortfolioService"]],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_6__["AppComponent"]]
@@ -331,55 +334,55 @@ var BarchartComponent = /** @class */ (function () {
                 id: 0,
                 label: 'Html',
                 value: 6,
-                type: 'Years'
+                type: '6 Years'
             },
             {
                 id: 1,
                 label: 'Css',
                 value: 6,
-                type: 'Months'
+                type: '6 Years'
             },
             {
                 id: 2,
                 label: 'Javascript',
                 value: 6,
-                type: 'Years'
+                type: '6 Years'
             },
             {
                 id: 3,
                 label: 'Jquery',
                 value: 4,
-                type: 'Years'
+                type: '4 Years'
             },
             {
                 id: 4,
                 label: 'Angular js',
                 value: 4,
-                type: 'Years'
+                type: '4 Years'
             },
             {
                 id: 5,
                 label: 'Vue Js',
-                value: 7,
-                type: 'Months'
+                value: 0.8,
+                type: ' 8 Months'
             },
             {
                 id: 6,
                 label: 'React Js',
-                value: 6,
-                type: 'Months'
+                value: 0.6,
+                type: '6 Months'
             },
             {
                 id: 7,
                 label: 'Node js',
                 value: 3,
-                type: 'Months'
+                type: ' 3 Years'
             },
             {
                 id: 8,
                 label: 'D3 js',
                 value: 3,
-                type: 'Months'
+                type: '3 Years'
             },
         ];
         this.host = d3_selection__WEBPACK_IMPORTED_MODULE_1__["select"](element.nativeElement);
@@ -433,7 +436,8 @@ var BarchartComponent = /** @class */ (function () {
             return color;
         }).on("mouseover", function (d) {
             divTooltip.style("opacity", 0.9);
-            divTooltip.html(d.label + "<br/>" + d.value + " " + d.type)
+            // divTooltip.html(d.label + "<br/>"  + d.value + " " + d.type )
+            divTooltip.html(d.label + "<br/>" + " " + d.type)
                 .style("left", (d3_selection__WEBPACK_IMPORTED_MODULE_1__["event"].pageX) + "px")
                 .style("top", (d3_selection__WEBPACK_IMPORTED_MODULE_1__["event"].pageY - 28) + "px");
         }).on("mouseout", function () {
@@ -473,7 +477,7 @@ module.exports = ".contact{\n  position: relative;\n  left: 40px;\n}\n\n/*# sour
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n\n    <div class=\"col-lg-12\">\n      <h1 class=\"page-header globalTop setColor\">Contact Details</h1>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-8\">\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99609.65365788624!2d-90.54376845676451!3d38.72236205658388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df2dc390145889%3A0x37df4fd345289622!2sMaryland+Heights%2C+MO!5e0!3m2!1sen!2sus!4v1553306972703\" width=\"800\" height=\"600\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>\n    </div>\n\n    <div class=\"col-md-4\">\n      <h3 class=\"contact\">Get in Touch</h3>\n        <h4 class=\"contact\"> Email: shashi.uidev88@gmail.com</h4>\n        <h4 class=\"contact\">Contact No:314-384-2427</h4>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\n\n  <div class=\"row\">\n\n    <div class=\"col-lg-12\">\n      <h1 class=\"page-header globalTop setColor\">Contact Details</h1>\n    </div>\n  </div>\n\n  <div class=\"row\">\n    <div class=\"col-md-8\">\n      <!-- <iframe src=\"https://goo.gl/maps/tEiCZdzNFegsSVy48\" width=\"800\" height=\"600\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe> -->\n      <iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24917.73824515794!2d-90.39844966093447!3d38.67836504470192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87df336140168653%3A0x3c64a264e82829eb!2sSt.%20Louis%2C%20MO%2063132!5e0!3m2!1sen!2sus!4v1586226390838!5m2!1sen!2sus\" width=\"700\" height=\"500\" frameborder=\"0\" style=\"border:0;\" allowfullscreen=\"\" aria-hidden=\"false\" tabindex=\"0\"></iframe>\n    </div>\n\n    <div class=\"col-md-4\">\n      <h3 class=\"contact\">Get in Touch</h3>\n        <h4 class=\"contact\"> Email: shashi.uidev88@gmail.com</h4>\n        <h4 class=\"contact\">Contact No:314-384-2427</h4>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1036,7 +1040,7 @@ module.exports = "p {\n  font-family: Lato;\n}\n\n.carousel-inner{\n  width:100%
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- Page Content -->\n\n<div class=\"container\">\n\n  <div class=\"row\">\n\n    <div class=\"col-lg-12\">\n      <h1 class=\"page-header globalTop setColor\">Portfolio</h1>\n    </div>\n\n  </div>\n  <div class=\"row\" >\n\n    <div class=\"bs-example\">\n\n      <div id=\"myCarousel\" class=\"carousel slide\" data-ride=\"carousel\">\n        <!-- Carousel indicators -->\n        <ol class=\"carousel-indicators\">\n          <li data-target=\"#myCarousel\" data-slide-to=\"0\" class=\"active\"></li>\n          <li data-target=\"#myCarousel\" data-slide-to=\"1\"></li>\n          <li data-target=\"#myCarousel\" data-slide-to=\"2\"></li>\n        </ol>\n        <!-- Wrapper for carousel items -->\n        <div class=\"carousel-inner\">\n          <div class=\"item active\">\n            <img src=\"assets/images/ui screens/kochone.png\" alt=\"First Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/kochtwo.png\" alt=\"First Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/kochthree.png\" alt=\"First Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/coeone.png\" alt=\"First Slide\">\n          </div>\n          <!--<div class=\"item \">-->\n            <!--<img src=\"assets/images/ui screens/coetwo.png\" alt=\"First Slide\">-->\n          <!--</div>-->\n          <!--<div class=\"item \">-->\n            <!--<img src=\"assets/images/ui screens/coethree.png\" alt=\"First Slide\">-->\n          <!--</div>-->\n          <div class=\"item \">\n            <img src=\"assets/images/ui screens/salesorder.png\" alt=\"First Slide\">\n          </div>\n          <!--<div class=\"item \">-->\n            <!--<img src=\"assets/images/ui screens/entone.png\" alt=\"First Slide\">-->\n          <!--</div>-->\n          <!--<div class=\"item \">-->\n            <!--<img src=\"assets/images/ui screens/enttwo.png\" alt=\"First Slide\">-->\n          <!--</div>-->\n          <div class=\"item \">\n            <img src=\"assets/images/ui screens/uploadtos3.png\" alt=\"First Slide\">\n          </div>\n          <div class=\"item \">\n            <img src=\"assets/images/ui screens/disney.JPG\" alt=\"First Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/disney2.JPG\" alt=\"Second Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/disney3.JPG\" alt=\"Third Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/disney4.JPG\" alt=\"Fourth Slide\">\n          </div>\n          <!-- <div class=\"item\">\n            <img src=\"assets/images/ui screens/Subaru.JPG\" alt=\"Third Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/Subaru2.JPG\" alt=\"Third Slide\">\n          </div> -->\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/IBX.JPG\" alt=\"Fifth Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/IBX2.JPG\" alt=\"Sixth Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/IBX3.JPG\" alt=\"Seventh Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/IBX4.JPG\" alt=\"Eighth Slide\">\n          </div>\n\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/QL.JPG\" height=\"1000px\" width=\"400px\" align=\"middle\" alt=\"Nineth Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/QL2.JPG\" height=\"1000px\" width=\"400px\"  align=\"middle\" alt=\"Tenth Slide\">\n          </div>\n          <div class=\"item\">\n            <img src=\"assets/images/ui screens/QL3.JPG\" height=\"1000px\" width=\"400px\"  align=\"middle\"   alt=\"Eleventh Slide\">\n          </div>\n\n\n        </div>\n        <!-- Carousel controls -->\n        <a class=\"carousel-control left\" href=\"#myCarousel\" data-slide=\"prev\">\n          <span class=\"glyphicon glyphicon-chevron-left\"></span>\n        </a>\n        <a class=\"carousel-control right\" href=\"#myCarousel\" data-slide=\"next\">\n          <span class=\"glyphicon glyphicon-chevron-right\"></span>\n        </a>\n      </div>\n\n    </div>\n\n\n\n  </div>\n"
+module.exports = "\n<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-lg-12\">\n      <h1 class=\"page-header globalTop setColor\">Portfolio</h1>\n    </div>\n  </div>\n  <div class=\"row\" >\n    <div class=\"bs-example\">\n      <carousel [interval]=\"myInterval\">\n        <slide>\n          <img src=\"assets/images/ui screens/kochone.png\" alt=\"first slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/kochtwo.png\" alt=\"second slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/kochthree.png\" alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/coeone.png\" alt=\"first slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/salesorder.png\" alt=\"second slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/uploadtos3.png\" alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/disney.JPG\" alt=\"first slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/disney2.JPG\" alt=\"second slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/disney3.JPG\"  alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/disney4.JPG\"  alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/IBX.JPG\"  alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/IBX2.JPG\"  alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/IBX3.JPG\"  alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/IBX4.JPG\"  alt=\"third slide\" style=\"display: block; width: 100%;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/QL.JPG\"  alt=\"third slide\" style=\"display: block; width: 50%;height:100%;margin: auto;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/QL2.JPG\"  alt=\"third slide\" style=\"display: block; width: 50%;height:100%;margin: auto;\">\n        </slide>\n        <slide>\n          <img src=\"assets/images/ui screens/QL3.JPG\"  alt=\"third slide\" style=\"display: block; width: 50%;height:100%;margin: auto;\">\n        </slide>\n      </carousel>\n    </div>\n  </div>\n"
 
 /***/ }),
 
@@ -1051,8 +1055,6 @@ module.exports = "<!-- Page Content -->\n\n<div class=\"container\">\n\n  <div c
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PortfolioComponent", function() { return PortfolioComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1063,24 +1065,11 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
-// import { ActivatedRoute } from '@angular/router'; 
 var PortfolioComponent = /** @class */ (function () {
-    // public portfolioId: string;
-    // public portfolioIdChange: string = '456';
     function PortfolioComponent() {
+        this.myInterval = 2000;
     }
     PortfolioComponent.prototype.ngOnInit = function () {
-        // this.portfolioId = this.route.snapshot.paramMap.get('id'); 
-        // alert(this.portfolioId);
-        // $('.carousel').carousel({
-        //     interval: 500
-        //   });
-    };
-    PortfolioComponent.prototype.ngAfterViewInit = function () {
-        jquery__WEBPACK_IMPORTED_MODULE_1__('.carousel').carousel({
-            interval: 500
-        });
     };
     PortfolioComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
